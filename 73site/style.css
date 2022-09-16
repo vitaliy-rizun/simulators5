@@ -1,0 +1,17 @@
+.robot {
+  animation-name: move;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+.constructor {
+  animation-timing-function: steps(5, end);
+  /*animation-timing-function: steps(5, start);*/
+}
+
+@keyframes move {
+  to {
+    left: 400px;
+  }
+}

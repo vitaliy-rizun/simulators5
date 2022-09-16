@@ -1,0 +1,20 @@
+@base-color: rgb(110, 27, 255);
+@distance: 60;
+@error-color: spin(@base-color, @distance);
+
+.color {
+  &-primary {
+    background-color: @base-color;
+  }
+
+  &-error {
+    background-color: @error-color;
+  }
+}
+
+.palette-item {
+  display: inline-block;
+  .color {
+    margin: 0.5em;
+  }
+}
