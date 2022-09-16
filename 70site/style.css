@@ -1,0 +1,12 @@
+.robot {
+  animation-name: move;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+@keyframes move {
+  to {
+    left: 400px;
+  }
+}

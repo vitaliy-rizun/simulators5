@@ -1,0 +1,58 @@
+@keyframes move-plane {
+  to {
+    transform: translateX(-1000px);
+  }
+}
+
+@keyframes move-antenna {
+  to {
+    transform: rotate(-60deg);
+  }
+}
+
+@keyframes move-car {
+  to {
+    transform: translateX(-350px);
+  }
+}
+
+@keyframes show-fog {
+  to {
+    opacity: 1;
+  }
+}
+
+.plane {
+  animation-name: move-plane;
+  animation-duration: 10s;
+}
+
+.antenna {
+  animation-name: move-antenna;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.car {
+  animation-name: move-car;
+  animation-duration: 4s;
+  animation-delay: 5s;
+  animation-fill-mode: forwards;
+}
+
+.fog-1,
+.fog-2 {
+  animation-name: show-fog;
+  animation-duration: 1s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+.fog-1 {
+  animation-delay: 9s;
+}
+
+.fog-2 {
+  animation-delay: 10s;
+}

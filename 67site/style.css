@@ -1,0 +1,23 @@
+@keyframes move-plane {
+  to {
+    transform: translateX(-1000px);
+  }
+}
+
+@keyframes move-antenna {
+  to {
+    transform: rotate(-60deg);
+  }
+}
+
+.plane {
+  animation-name: move-plane;
+  animation-duration: 10s;
+}
+
+.antenna {
+  animation-name: move-antenna;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
