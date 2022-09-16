@@ -1,0 +1,4 @@
+.checklist ul {
+  display: inline-table;
+  /*display: table;*/
+}
