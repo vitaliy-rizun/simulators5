@@ -1,0 +1,23 @@
+@red: #ff4136;
+@blue: #00aef9;
+@green: #01ff70;
+
+.paint-blue() {
+  background-color: @blue;
+}
+
+.monster {
+  background-color: @red;
+}
+
+.monster-foolish {
+  .paint-blue();
+}
+
+.monster-happy {
+  .paint(@green);
+}
+
+.paint(@color) {
+  background-color: @color;
+}

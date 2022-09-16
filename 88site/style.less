@@ -1,0 +1,18 @@
+@base-color: rgb(110, 27, 255);
+
+.btn {
+  &-primary {
+    background-color: @base-color;
+
+    /* &-правила добавьте тут */
+    &-hover,
+    &:hover {
+      background-color: lighten(@base-color, 20%);
+    }
+    
+    &-pressed,
+    &:active {
+      background-color: darken(@base-color, 20%);
+    }
+  }
+}

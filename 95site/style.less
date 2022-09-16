@@ -1,0 +1,20 @@
+@red: #ff4136;
+@blue: #00aef9;
+
+.monster {
+  background-color: @red;
+}
+
+.monster-foolish {
+  .paint-blue();
+  .reduce();
+}
+
+.paint-blue() {
+  background-color: @blue;
+}
+
+.reduce() {
+  width: 150px;
+  height: 150px;
+}

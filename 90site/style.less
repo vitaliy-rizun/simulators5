@@ -1,0 +1,12 @@
+@base-color: rgb(110, 27, 255);
+@alert-primary-bg: lighten(@base-color, 35%);
+@alert-primary-border: darken(spin(@alert-primary-bg, -10), 5%);
+@alert-primary-text: darken(@alert-primary-bg, 50%);
+
+.alert {
+  &-primary {
+    border-color: @alert-primary-border;
+    background-color: @alert-primary-bg;
+    color: @alert-primary-text;
+  }
+}

@@ -1,0 +1,18 @@
+.color {
+  /* &-правило добавьте тут */
+}
+.color-primary {
+  background-color: #6e1bff;
+}
+.color-error {
+  background-color: #ff1bac;
+}
+.color-info {
+  background-color: #1bacff;
+}
+.palette-item {
+  display: inline-block;
+}
+.palette-item .color {
+  margin: 0.5em;
+}

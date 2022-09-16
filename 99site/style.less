@@ -1,0 +1,15 @@
+@green: #01ff70;
+
+.paint(@color) {
+  background-color: @color;
+}
+
+.monster-happy {
+  .paint(@green);
+  .resize(150px; 150px);
+}
+
+.resize(@width; @height) {
+  width: @width;
+  height: @height;
+}

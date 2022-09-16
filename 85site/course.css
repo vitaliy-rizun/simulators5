@@ -1,0 +1,106 @@
+body {
+    font-size: 16px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+}
+
+h1 {
+    margin-left: 1.2em;
+    font-size: 1.5em
+}
+
+h2 {
+    font-size: 1em
+}
+
+.palette {
+    text-align: center
+}
+
+.palette>h1 {
+    margin-left: 0
+}
+
+.palette-item,body {
+    margin: 0
+}
+
+figcaption {
+    margin: .5em 0;
+    font-weight: 700
+}
+
+.color {
+    margin: .5em;
+    width: 5.5em;
+    height: 5.5em;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,.3);
+    color: #fff;
+    line-height: 5.5em
+}
+
+.controls>section {
+    clear: left;
+    margin: 1em 0
+}
+
+.controls h2 {
+    margin-left: 2em;
+    width: 10em
+}
+
+.color,.controls [class^=btn-],.controls h2 {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.alert,.btn {
+    border-radius: .2em
+}
+
+.btn {
+    padding: .75em 2.5em;
+    outline: 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1em;
+    line-height: 1em;
+    cursor: pointer;
+    border: 0
+}
+
+.controls>section:after {
+    display: table;
+    clear: both;
+    content: " "
+}
+
+.alerts>section {
+    margin: .5em 2em
+}
+
+.alerts>section>p {
+    margin: .5em;
+    padding: 1em
+}
+
+.alert {
+    border: 1px solid transparent
+}
+
+.palette-case {
+    margin-top: 7px;
+    margin-left: 7px;
+    width: 300px;
+    height: 300px
+}
+
+.palette-case [class^=color-] {
+    float: left;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    line-height: 100px
+}

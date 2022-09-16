@@ -1,0 +1,20 @@
+@red: #ff4136;
+@blue: #00aef9;
+@green: #01ff70;
+@yellow: #ffdc00;
+
+.paint(@color: @yellow) {
+  background-color: @color;
+}
+
+.monster-happy {
+  .paint(@green);
+}
+
+.monster-foolish {
+  .paint(@red);
+}
+
+.monster-friendly {
+  .paint();
+}
