@@ -1,0 +1,29 @@
+@red: #ff4136;
+@base-size: 220px;
+
+.transform(increase; @size) {
+  width: @base-size + @size;
+  height: @base-size + @size;
+}
+
+.transform(decrease; @size) {
+  width: @base-size - @size;
+  height: @base-size - @size;
+}
+
+.monster {
+  width: @base-size;
+  height: @base-size;
+}
+
+.monster-happy {
+  .transform(increase; 50px);
+}
+
+.monster-foolish {
+  .transform(decrease; 50px);
+}
+
+.transform(@_; @size) {
+  background-color: @red;
+}

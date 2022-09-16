@@ -1,0 +1,44 @@
+@lime: #01ff70;
+@red: #ff4136;
+@yellow: #ffdc00;
+@fuchsia: #f012be;
+
+.magic(@color) {
+  background-color: @color;
+}
+
+.magic(rotate; @angle) {
+  transform: rotate(@angle);
+}
+
+.magic(spin; @color) {
+  background-color: spin(@color, 90deg);
+}
+
+.magic(reduce; @size) {
+  width: @size;
+  height: @size;
+}
+
+.magic(skew; @angle) {
+  transform: skewX(@angle);
+}
+
+.monster-1 {
+  .magic(@red);
+  .magic(rotate; 180deg);
+}
+
+.monster-2 {
+  .magic(spin; @lime);
+}
+
+.monster-3 {
+  .magic(@yellow);
+  .magic(reduce; 80px);
+}
+
+.monster-4 {
+  .magic(@fuchsia);
+  .magic(skew; -5deg);
+}

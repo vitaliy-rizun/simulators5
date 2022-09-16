@@ -1,0 +1,25 @@
+@red: #ff4136;
+
+.paint(@color) {
+  background-color: @color;
+}
+
+.paint(light; @color) {
+  background-color: lighten(@color, 20%);
+}
+
+.monster-ordinary {
+  .paint(@red);
+}
+
+.monster-light {
+  .paint(light; @red);
+}
+
+.monster-dark {
+  .paint(dark; @red);
+}
+
+.paint(dark; @color) {
+  background-color: darken(@color, 20%);
+}

@@ -1,0 +1,16 @@
+.monster-1 {
+  background-color: #ff4136;
+  transform: rotate(180deg);
+}
+.monster-2 {
+  background-color: #0111ff;
+}
+.monster-3 {
+  background-color: #ffdc00;
+  width: 80px;
+  height: 80px;
+}
+.monster-4 {
+  background-color: #f012be;
+  transform: skewX(-5deg);
+}

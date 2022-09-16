@@ -1,0 +1,60 @@
+.round() {
+  border-radius: 50%;
+}
+
+.skew(@angle) {
+  transform: skewX(@angle);
+}
+
+.rotate(@angle) {
+  transform: rotate(@angle);
+}
+
+.rotateSkew(@angle) {
+  transform: rotate(@angle) skewX(@angle);
+}
+
+.size(@width; @height) {
+  width: @width;
+  height: @height;
+}
+
+.square(@width) {
+  .size(@width; @width);
+}
+
+.absolute-center() {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.shadow() {
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.piece {
+  .absolute-center();
+  .shadow();
+  .square(50px);
+}
+
+.piece-1 {
+  .rotateSkew(45deg);
+}
+
+.piece-2 {
+  .round();
+  .square(75px);
+}
+
+.piece-3 {
+  .rotate(45deg);
+}
+
+.piece-4 {
+  .size(50px; 100px);
+}

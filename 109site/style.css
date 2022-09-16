@@ -1,0 +1,15 @@
+.monster-1 {
+  width: 80px;
+  height: 80px;
+}
+.monster-2 {
+  width: 90px;
+  height: 90px;
+}
+.monster-3 {
+  transform: rotate(180deg);
+}
+.monster-4 {
+  transform: rotate(270deg);
+  background-color: #f012be;
+}

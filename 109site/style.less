@@ -1,0 +1,44 @@
+@lime: #01ff70;
+@red: #ff4136;
+@yellow: #ffdc00;
+@fuchsia: #f012be;
+
+// Добавьте к примесям условия применения
+.rotate(@angle) when (@angle > 90deg) {
+  transform: rotate(@angle);
+}
+
+.paint(@color) when (@color = @fuchsia) {
+// .paint(@color) when (@color = #f012be) {
+  background-color: @color;
+}
+
+.resize(@size) when (@size < 100px) {
+  width: @size;
+  height: @size;
+}
+
+// Не меняйте параметры применения примесей!
+.monster-1 {
+  .resize(80px);
+  .rotate(45deg);
+  .paint(@lime);
+}
+
+.monster-2 {
+  .resize(90px);
+  .rotate(90deg);
+  .paint(@red);
+}
+
+.monster-3 {
+  .resize(130px);
+  .rotate(180deg);
+  .paint(@yellow);
+}
+
+.monster-4 {
+  .resize(150px);
+  .rotate(270deg);
+  .paint(@fuchsia);
+}

@@ -1,0 +1,18 @@
+@red: #ff4136;
+
+.monster-happy {
+  .magic(@red);
+}
+
+.monster-foolish {
+  .magic(150px);
+}
+
+.magic(@parameter) when (iscolor(@parameter)) {
+  background-color: @parameter;
+}
+
+.magic(@parameter) when (isnumber(@parameter)) {
+  width: @parameter;
+  height: @parameter;
+}
