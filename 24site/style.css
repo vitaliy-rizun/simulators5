@@ -1,0 +1,18 @@
+.square {
+  left: 0;
+  transition-timing-function: linear;
+  transition-duration: 3s;
+  transition-property: left, border-radius;
+}
+
+.square-active {
+  left: 75%;
+  border-radius: 50%;
+}
+
+.square-experimental {
+  background-color: #e74c3c;
+  transition-timing-function: ease-in;
+  /*transition-timing-function: ease-out;*/
+  /*transition-timing-function: ease-in-out;*/
+}

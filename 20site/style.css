@@ -1,0 +1,10 @@
+.btn {
+  background-color: #ffffff;
+  transition-duration: 200ms;
+}
+
+.btn-active {
+  background-color: #ff5252;
+  color: #ffffff;
+  transform: rotate(45deg);
+}
