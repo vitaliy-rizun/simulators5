@@ -1,0 +1,19 @@
+.box {
+  position: relative;
+}
+.triangle-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-width: 100px;
+  border-style: solid;
+  border-color: #ff4136;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-style: none;
+}

@@ -1,0 +1,14 @@
+@base-color: rgb(110, 27, 255);
+
+.generate-colors(@color) {
+  @bg-color: lighten(@color, 35%);
+  background-color: @bg-color;
+  color: darken(@bg-color, 50%);
+  border-color: darken(spin(@bg-color, -10), 5%);
+}
+
+.alert {
+  &-primary {
+    .generate-colors(@base-color);
+  }
+}

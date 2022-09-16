@@ -1,0 +1,32 @@
+.box {
+  position: relative;
+}
+
+.zero-centered() {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.triangle(@_; @size; @color) {
+  width: 0;
+  height: 0;
+  border-width: @size;
+  border-style: solid;
+  border-color: @color;
+}
+
+.triangle-box {
+  .zero-centered;
+  .triangle(top; 100px; #ff4136);
+}
+
+.triangle(top; @size; @color) {
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-top-style: none;
+  // border-top-width: 0;
+}

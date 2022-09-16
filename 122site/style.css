@@ -1,0 +1,25 @@
+.arrow-round {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  border: 25px solid #618ad2;
+  border-right-color: transparent;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.arrow-round::after {
+  content: "";
+  position: absolute;
+  border-width: 50px;
+  border-style: solid;
+  border-top-width: 0;
+  border-right-width: 0;
+  border-bottom-color: #618ad2;
+  border-left-color: transparent;
+  top: -15px;
+  left: 110px;
+}

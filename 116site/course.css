@@ -1,0 +1,239 @@
+.exam,.world {
+    background-image: url(img/pattern.png)
+}
+
+.world {
+    text-align: center
+}
+
+.exam {
+    width: 550px;
+    height: 310px;
+    margin: 0;
+    padding: 0
+}
+
+.monster {
+    display: inline-block;
+    width: 220px;
+    height: 220px;
+    margin: 10px;
+    vertical-align: middle;
+    background-color: #e1e1e2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid;
+    border-color: #bbb #999;
+    box-shadow: 0 2px 5px rgba(0,0,0,.4),inset 0 1px 0 #ccc,inset 1px 0 0 #aaa,inset 0 -1px 0 #ccc,inset -1px 0 0 #aaa,inset 0 2px 0 #c6c6c6,inset 2px 0 0 #a6a6a6,inset 0 -2px 0 #c6c6c6,inset -2px 0 0 #a6a6a6,inset 0 3px 0 silver,inset 3px 0 0 #a0a0a0,inset 0 -3px 0 silver,inset -3px 0 0 #a0a0a0,inset 0 4px 0 #b9b9b9,inset 4px 0 0 #999,inset 0 -4px 0 #b9b9b9,inset -4px 0 0 #999,inset 0 5px 0 #b6b6b6,inset 5px 0 0 #969696,inset 0 -5px 0 #b6b6b6,inset -5px 0 0 #969696,inset 0 6px 0 #b0b0b0,inset 6px 0 0 #909090,inset 0 -6px 0 #b0b0b0,inset -6px 0 0 #909090,inset 0 7px 0 #a9a9a9,inset 7px 0 0 #898989,inset 0 -7px 0 #a9a9a9,inset -7px 0 0 #898989,inset 0 8px 0 #a6a6a6,inset 8px 0 0 #868686,inset 0 -8px 0 #a6a6a6,inset -8px 0 0 #868686,inset 0 9px 0 #a0a0a0,inset 9px 0 0 gray,inset 0 -9px 0 #a0a0a0,inset -9px 0 0 gray,inset 0 10px 0 #888,inset 10px 0 0 #666,inset 0 -10px 0 #888,inset -10px 0 0 #666,inset 0 0 10px 10px rgba(0,0,0,.5)
+}
+
+.monster-happy {
+    background-image: url(img/monster-happy.svg)
+}
+
+.monster-foolish {
+    background-image: url(img/monster-foolish.svg)
+}
+
+.monster-friendly {
+    background-image: url(img/monster-friendly.svg)
+}
+
+.monster-party {
+    width: 330px;
+    margin: 0 auto
+}
+
+.monster-small {
+    width: 130px;
+    height: 130px
+}
+
+.note {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5px 20px 20px;
+    font-family: sans-serif;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.3)
+}
+
+.puzzle {
+    position: relative;
+    top: 10px;
+    width: 400px;
+    height: 290px;
+    margin: 0 auto;
+    box-shadow: 0 0 1px rgba(0,0,0,.2)
+}
+
+.puzzle-part {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 145px
+}
+
+.puzzle-part::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto
+}
+
+.puzzle-part:nth-child(1) {
+    background-color: #0074d9
+}
+
+.puzzle-part:nth-child(1)::before {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    transform: rotate(45deg) skewX(45deg)
+}
+
+.puzzle-part:nth-child(2) {
+    background-color: #ffdc00
+}
+
+.puzzle-part:nth-child(2)::before {
+    width: 75px;
+    height: 75px;
+    background-color: #fff;
+    border-radius: 50%
+}
+
+.puzzle-part:nth-child(3) {
+    background-color: #ff851b
+}
+
+.puzzle-part:nth-child(3)::before {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    transform: rotate(45deg)
+}
+
+.puzzle-part:nth-child(4) {
+    background-color: #01ff70
+}
+
+.puzzle-part:nth-child(4)::before {
+    width: 50px;
+    height: 100px;
+    background-color: #fff;
+    transform: rotate(180deg)
+}
+
+.piece-1 {
+    background-color: #0074d9
+}
+
+.piece-2 {
+    background-color: #ffdc00
+}
+
+.piece-3 {
+    background-color: #ff851b
+}
+
+.piece-4 {
+    background-color: #01ff70
+}
+
+.alerts>section {
+    margin: .5em 2em
+}
+
+.alerts>section>p {
+    margin: .5em;
+    padding: 1em
+}
+
+.alert {
+    border: 1px solid transparent;
+    border-radius: .2em
+}
+
+.toolkit {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Helvetica Neue","Helvetica","Arial",sans-serif
+}
+
+.toolkit h1 {
+    margin-left: 1.2em;
+    font-size: 1.5em
+}
+
+.box {
+    width: 350px;
+    height: 350px;
+    margin: 50px auto;
+    text-align: left;
+    background-color: #fff
+}
+
+.centered-box {
+    display: inline-block;
+    font-size: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    background-color: #0074d9
+}
+
+.centered-box span::after {
+    content: "";
+    vertical-align: middle
+}
+
+.box,.centered-box,.exam-box {
+    box-shadow: 0 1px 5px rgba(0,0,0,.3)
+}
+
+.exam-box {
+    position: relative;
+    top: 10px;
+    width: 410px;
+    height: 285px;
+    margin: 0 auto;
+    padding: 1px 5px;
+    background-color: #fff
+}
+
+[class^=stair-] {
+    height: 24px;
+    margin: 4px 0;
+    outline: 1px solid #000
+}
+
+.box-set {
+    position: relative
+}
+
+.box-set .triangle-box {
+    position: absolute
+}
+
+.box-set .triangle-box:nth-child(1) {
+    top: 70px;
+    left: 70px
+}
+
+.box-set .triangle-box:nth-child(2) {
+    top: 70px;
+    right: 70px
+}
+
+.box-set .triangle-box:nth-child(3) {
+    bottom: 70px;
+    left: 70px
+}
+
+.box-set .triangle-box:nth-child(4) {
+    right: 70px;
+    bottom: 70px
+}
